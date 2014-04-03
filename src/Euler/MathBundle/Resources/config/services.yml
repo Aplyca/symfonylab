@@ -1,0 +1,7 @@
+parameters:
+#    euler_math.example.class: Euler\MathBundle\Example
+
+services:
+#    euler_math.example:
+#        class: %euler_math.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

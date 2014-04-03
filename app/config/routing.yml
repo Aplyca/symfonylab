@@ -1,0 +1,4 @@
+euler_math:
+    resource: "@EulerMathBundle/Resources/config/routing.yml"
+    prefix:   /
+
