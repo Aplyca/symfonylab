@@ -1,9 +1,18 @@
-{% extends '::base.html.twig' %}
+{% extends "AcmeDemoBundle::layout.html.twig" %}
 
-{% block title 'Some Twiggy Goodness' %}
 
-{% block body %}
+{% block title "Answers" %}
+
+{% block content_header '' %}
+
+{% block content %}
+<h3>Writing Data To Database</h3>
 {% for i in 1..count %}
     Hello <strong>{{ name|upper }}</strong> # {{ i }}!<br/>
 {% endfor %}
+
+<h3>Reading Data From Database</h3>
+{{ event.name }}<br/>
+{{ event.location }}<br/>
+
 {% endblock %}

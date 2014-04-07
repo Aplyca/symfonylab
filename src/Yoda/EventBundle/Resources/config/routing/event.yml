@@ -1,0 +1,30 @@
+event:
+    pattern:  /
+    defaults: { _controller: "YodaEventBundle:Event:index" }
+
+event_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "YodaEventBundle:Event:show" }
+
+event_new:
+    pattern:  /new
+    defaults: { _controller: "YodaEventBundle:Event:new" }
+
+event_create:
+    pattern:  /create
+    defaults: { _controller: "YodaEventBundle:Event:create" }
+    requirements: { _method: post }
+
+event_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "YodaEventBundle:Event:edit" }
+
+event_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "YodaEventBundle:Event:update" }
+    requirements: { _method: post|put }
+
+event_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "YodaEventBundle:Event:delete" }
+    requirements: { _method: post|delete }
