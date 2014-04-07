@@ -1,0 +1,21 @@
+Euler\MathBundle\Entity\Questions:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        time:
+            type: datetime
+        question:
+            type: string
+            length: 255
+        points:
+            type: integer
+    lifecycleCallbacks: {  }

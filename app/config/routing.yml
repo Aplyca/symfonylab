@@ -1,3 +1,7 @@
+yoda_event:
+    resource: "@YodaEventBundle/Resources/config/routing.yml"
+    prefix:   /
+
 euler_math:
     resource: "@EulerMathBundle/Resources/config/routing.yml"
     prefix:   /

@@ -1,3 +1,19 @@
 euler_math_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: EulerMathBundle:Default:index }
+
+euler_math_problems:
+    pattern:  /problems/{name}/{points}
+    defaults: { _controller: EulerMathBundle:Problems:index }
+
+euler_math_answers:
+    pattern:  /answers/{person}/{answer}/{result}
+    defaults: { _controller: EulerMathBundle:Answers:index }
+
+
+euler_math_catchAll:
+    path: /{requestUri}
+    defaults:
+        _controller: EulerMathBundle:Mapping:catchAll
+    requirements:
+        requestUri: ".*"

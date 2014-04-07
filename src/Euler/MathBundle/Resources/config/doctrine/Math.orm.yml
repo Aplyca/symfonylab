@@ -1,0 +1,34 @@
+Euler\MathBundle\Entity\Math:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        array:
+            type: string
+            length: 255
+        object:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        time:
+            type: string
+            length: 255
+        location:
+            type: string
+            length: 255
+        times:
+            type: time
+        details:
+            type: text
+        points:
+            type: integer
+        result:
+            type: float
+    lifecycleCallbacks: {  }

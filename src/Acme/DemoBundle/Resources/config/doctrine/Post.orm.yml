@@ -1,0 +1,22 @@
+Acme\DemoBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: Acme\DemoBundle\Entity\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        apellido:
+            type: string
+            length: 255
+        cedula:
+            type: integer
+        fecha:
+            type: time
+    lifecycleCallbacks: {  }

@@ -1,0 +1,3 @@
+yoda_event_homepage:
+    pattern:  /events/{name}/{count}
+    defaults: { _controller: YodaEventBundle:Default:index }

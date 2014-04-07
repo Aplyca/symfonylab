@@ -1,0 +1,16 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+
+{% block title "Answers" %}
+
+{% block content_header '' %}
+
+{% block content %}
+<h1>Answers</h1>
+    <h2>Hi {{ persona }}</h2>
+<p style="color:green">Result: {{result}} </p>
+
+<strong>Json Response to database</strong>
+{{ response }}
+
+{% endblock %}
